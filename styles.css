@@ -915,7 +915,7 @@ body {
 /* ── FEATURE BANNER ──────────────────────────────────────── */
 .feature-banner {
   background: #f5f5f7;
-  padding: 100px 24px 0;
+  padding: 100px 24px 100px;
 }
 
 .feature-banner-inner {
