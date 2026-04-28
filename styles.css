@@ -764,12 +764,12 @@ body {
 }
 
 .product-grid {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
-  gap: 20px;
+  gap: 16px;
   align-items: start;
 }
 
@@ -1654,7 +1654,6 @@ body {
   .categories-grid { grid-template-columns: 1fr 1fr; }
   .sustain-cards { grid-template-columns: 1fr; }
   .product-grid { grid-template-columns: 1fr 1fr; }
-  .product-card--large { grid-column: span 2; }
   .capabilities { grid-template-columns: 1fr; gap: 40px; }
   .billboard-grid { grid-template-columns: 1fr 1fr; }
   .bill-divider { display: none; }
