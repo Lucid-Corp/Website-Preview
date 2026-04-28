@@ -919,18 +919,33 @@ body {
 /* ── BILLBOARD ───────────────────────────────────────────── */
 /* ── FEATURE BANNER ──────────────────────────────────────── */
 .feature-banner {
-  background: #f5f5f7;
-  padding: 100px 24px 100px;
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+.feature-banner-img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 
 .feature-banner-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
+  position: absolute;
+  inset: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  text-align: center;
   gap: 16px;
+  padding: 60px 24px;
+  background: linear-gradient(to bottom, rgba(0,0,0,0.35) 0%, rgba(0,0,0,0.15) 100%);
+}
+
+.feature-banner-inner .eyebrow {
+  color: rgba(255,255,255,0.75);
 }
 
 .feature-banner-inner h2 {
@@ -938,20 +953,14 @@ body {
   font-weight: 700;
   letter-spacing: -0.025em;
   line-height: 1.1;
+  color: #fff;
 }
 
 .feature-banner-desc {
   font-size: 17px;
-  color: var(--text2);
+  color: rgba(255,255,255,0.8);
   line-height: 1.65;
   max-width: 560px;
-}
-
-.feature-banner-img {
-  width: 85%;
-  max-width: 800px;
-  margin-top: 40px;
-  display: block;
 }
 
 /* ── SCROLL ZOOM SECTION ─────────────────────────────────── */
